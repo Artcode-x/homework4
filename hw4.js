@@ -1,13 +1,12 @@
 
+// z 1
+let m = 1;
 
-//z 1
-let i = 1;
+let p = Number(2);
 
-let n = Number(2);
-
-while (i <= n) {
+while (i <= p) {
     alert('Привет!');
-    i++;
+    m++;
 }
 
   //
@@ -25,6 +24,7 @@ for (let i = 7; i <= 22; i++) {
 }
 
 
+
 //z 4
 let obj = {
     'Коля': '200',
@@ -34,17 +34,35 @@ let obj = {
 
 for (let key in obj) {
     alert(key + ' - зарплата ' +  obj[key] + '$');
-    break;
+    console.log (`${key} - зарплата ${obj[key]} долларов`)
 }
 
 
  
 //z 5
-for (let n = 1000; n > 50; n++) {
+let n = 1000;
+let i = 0;
+
+for (; n > 50; i++) {
+    n /= 2;
+}
+
+console.log(`Получилось число - ${n}. Количество итераций - ${i}`);
+
+
+
+
+/*for (let n = 1000; n > 50; n++) {
     if ( n /= 2) {
      alert(n);}
      }
+     */
 
+    
 
-
+// z6 
+let firstFriday = 7;
+for (let day = firstFriday; day <= 31; day += 7) {
+    console.log(`сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`)
+};
 
